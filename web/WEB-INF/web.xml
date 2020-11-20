@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>InitServlet</servlet-name>
+        <servlet-class>Controller.InitServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InitSServlet</servlet-name>
+        <servlet-class>Controller.InitSServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrderController</servlet-name>
+        <servlet-class>Controller.OrderController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConfirmShopController</servlet-name>
+        <servlet-class>Controller.ConfirmShopController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitServlet</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InitSServlet</servlet-name>
+        <url-pattern>/In</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderController</servlet-name>
+        <url-pattern>/OrderController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConfirmShopController</servlet-name>
+        <url-pattern>/ConfirmShopController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
